@@ -29,10 +29,16 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
       end: Offset.zero,
     ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeOut));
 
+<<<<<<< HEAD
     _fadeAnimation = Tween<double>(
       begin: 0,
       end: 1,
     ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeIn));
+=======
+    _fadeAnimation = Tween<double>(begin: 0, end: 1).animate(
+      CurvedAnimation(parent: _controller, curve: Curves.easeIn),
+    );
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
 
     _controller.forward();
   }
@@ -52,7 +58,14 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           // Fondo con Wave
           ClipPath(
             clipper: WaveClipperOne(flip: true, reverse: false),
+<<<<<<< HEAD
             child: Container(height: 320, color: AppColors.primaryDark),
+=======
+            child: Container(
+              height: 320,
+              color: AppColors.primaryDark,
+            ),
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
           ),
 
           // Logo y texto
@@ -107,16 +120,27 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                     _buildMainButton("Create Account", () {}),
                     const SizedBox(height: 10),
                     _buildMainButton("Login", () {
+<<<<<<< HEAD
                       Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) => BNavegacion()),
                       ); // Regresar a la pantalla anterior
+=======
+                     Navigator.push(context,
+                            MaterialPageRoute(builder: (context)=> BNavegacion())); // Regresar a la pantalla anterior
+                   
+                  
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
                     }),
                   ],
                 ),
               ),
             ),
+<<<<<<< HEAD
           ),
+=======
+          )
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
         ],
       ),
     );

@@ -8,7 +8,11 @@ void main() {
 }
 
 class Principal extends StatelessWidget {
+<<<<<<< HEAD
   const Principal({super.key});
+=======
+  const Principal({Key? key}) : super(key: key);
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +38,11 @@ class Principal extends StatelessWidget {
 }
 
 class WelcomeScreen extends StatefulWidget {
+<<<<<<< HEAD
   const WelcomeScreen({super.key});
+=======
+  const WelcomeScreen({Key? key}) : super(key: key);
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
 
   @override
   State<WelcomeScreen> createState() => _WelcomeScreenState();
@@ -58,7 +66,14 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     _animation = Tween<Offset>(
       begin: const Offset(0, -1), // Comienza fuera de la pantalla (arriba)
       end: Offset.zero, // Termina en su posición original
+<<<<<<< HEAD
     ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));
+=======
+    ).animate(CurvedAnimation(
+      parent: _controller,
+      curve: Curves.easeInOut,
+    ));
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
 
     // Inicia la animación
     _controller.forward();
@@ -91,8 +106,12 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 ),
               ),
               const SizedBox(height: 24),
+<<<<<<< HEAD
               Text(
                 "Bienvenido a ",
+=======
+              Text("Bienvenido a ",
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
                 style: TextStyle(
                   fontSize: 18,
                   fontStyle: GoogleFonts.poppins().fontStyle,
@@ -109,6 +128,11 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               ),
               const SizedBox(height: 12),
 
+<<<<<<< HEAD
+=======
+               
+              
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
               Text(
                 'Conectando talento, Creando oportunidades',
                 textAlign: TextAlign.center,
@@ -134,7 +158,14 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 },
                 child: const Text(
                   'Login',
+<<<<<<< HEAD
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+=======
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
                 ),
               ),
               const SizedBox(height: 16),
@@ -166,4 +197,8 @@ class _WelcomeScreenState extends State<WelcomeScreen>
       ),
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be

@@ -1,4 +1,8 @@
 import 'package:a/chat/chat_list_screen.dart';
+<<<<<<< HEAD
+=======
+import 'package:a/chat/chat_screen.dart';
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
 import 'package:flutter/material.dart';
 
 class Foro extends StatelessWidget {
@@ -77,7 +81,14 @@ class Foro extends StatelessWidget {
               // Descripción del foro
               Text(
                 forumDescription,
+<<<<<<< HEAD
                 style: const TextStyle(fontSize: 15, color: Colors.black87),
+=======
+                style: const TextStyle(
+                  fontSize: 15,
+                  color: Colors.black87,
+                ),
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
               ),
 
               const Spacer(),
@@ -95,16 +106,26 @@ class Foro extends StatelessWidget {
                         borderRadius: BorderRadius.circular(24),
                       ),
                       padding: const EdgeInsets.symmetric(
+<<<<<<< HEAD
                         horizontal: 32,
                         vertical: 12,
                       ),
+=======
+                          horizontal: 32, vertical: 12),
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
                     ),
                     child: const Icon(
                       Icons.card_giftcard,
                       color: Color(0xFF1D1B4E),
                     ),
                   ),
+<<<<<<< HEAD
                   SizedBox(width: 16),
+=======
+                  SizedBox(
+                    width: 16,
+                  ),
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
                   // Botón Unirse / Continuar
                   ElevatedButton(
                     onPressed: () {
@@ -121,9 +142,13 @@ class Foro extends StatelessWidget {
                         borderRadius: BorderRadius.circular(24),
                       ),
                       padding: const EdgeInsets.symmetric(
+<<<<<<< HEAD
                         horizontal: 32,
                         vertical: 12,
                       ),
+=======
+                          horizontal: 32, vertical: 12),
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
                     ),
                     child: Icon(
                       fromMyForums ? Icons.play_arrow : Icons.send,

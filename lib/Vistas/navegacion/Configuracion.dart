@@ -49,9 +49,13 @@ class _SettingsState extends State<Settings> {
       try {
         await _firestore.collection('users').doc(user.uid).set({
           'name': _nameController.text,
+<<<<<<< HEAD
           'lastname': _lastnameController.text,
           'role': _rolController.text, // <-- Corregido aquí
           'email': _emailController.text,
+=======
+          'lastname': _lastnameController.text, // <-- Corregido aquí
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
           'age': int.tryParse(_ageController.text) ?? 0,
         }, SetOptions(merge: true));
 

@@ -11,7 +11,11 @@ class ChatScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final chatRepo = Provider.of<ChatRepository>(context);
+<<<<<<< HEAD
     final TextEditingController controller = TextEditingController();
+=======
+    final TextEditingController _controller = TextEditingController();
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
 
     return Scaffold(
       // Fondo crema (color hexadecimal #F5F5F5)
@@ -24,6 +28,7 @@ class ChatScreen extends StatelessWidget {
               'Chat Grupal',
               style: TextStyle(color: Colors.white),
             ),
+<<<<<<< HEAD
             backgroundColor: const Color.fromARGB(
               255,
               9,
@@ -33,6 +38,10 @@ class ChatScreen extends StatelessWidget {
             iconTheme: const IconThemeData(
               color: Color.fromARGB(255, 12, 7, 52),
             ),
+=======
+            backgroundColor: const Color.fromARGB(255, 9, 14, 61), // Azul oscuro
+            iconTheme: const IconThemeData(color: Color.fromARGB(255, 12, 7, 52)),
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
             elevation: 0,
           ),
           // Área de mensajes
@@ -45,21 +54,29 @@ class ChatScreen extends StatelessWidget {
                   return const Center(
                     child: Text(
                       'No hay mensajes aún.',
+<<<<<<< HEAD
                       style: TextStyle(
                         color: Color.fromARGB(255, 12, 7, 52),
                         fontSize: 16,
                       ),
+=======
+                      style: TextStyle(color: Color.fromARGB(255, 12, 7, 52), fontSize: 16),
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
                     ),
                   );
                 }
                 return ListView.builder(
                   reverse: true,
+<<<<<<< HEAD
                   padding: const EdgeInsets.fromLTRB(
                     16,
                     16,
                     16,
                     8,
                   ), // Ajuste de padding
+=======
+                  padding: const EdgeInsets.fromLTRB(16, 16, 16, 8), // Ajuste de padding
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
                   itemCount: snapshot.data!.length,
                   itemBuilder: (context, index) {
                     return MessageBubble(message: snapshot.data![index]);
@@ -76,14 +93,25 @@ class ChatScreen extends StatelessWidget {
               color: const Color.fromARGB(255, 240, 232, 232),
               borderRadius: BorderRadius.circular(24),
               boxShadow: [
+<<<<<<< HEAD
                 BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 4),
+=======
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.1),
+                  blurRadius: 4,
+                ),
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
               ],
             ),
             child: Row(
               children: [
                 Expanded(
                   child: TextField(
+<<<<<<< HEAD
                     controller: controller,
+=======
+                    controller: _controller,
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
                     decoration: const InputDecoration(
                       hintText: 'Escribe un mensaje...',
                       border: InputBorder.none,
@@ -93,10 +121,18 @@ class ChatScreen extends StatelessWidget {
                 IconButton(
                   icon: const Icon(Icons.send, color: Color(0xFF0C0734)),
                   onPressed: () {
+<<<<<<< HEAD
                     if (controller.text.isNotEmpty) {
                       chatRepo.sendMessage(groupId, controller.text);
                       controller.clear();
                     }
+=======
+                    if (_controller.text.isNotEmpty) {
+                      chatRepo.sendMessage(groupId,_controller.text);
+                      _controller.clear();
+                    }
+                    
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
                   },
                 ),
               ],
@@ -106,4 +142,8 @@ class ChatScreen extends StatelessWidget {
       ),
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be

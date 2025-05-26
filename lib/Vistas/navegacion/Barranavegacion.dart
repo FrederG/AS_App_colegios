@@ -5,7 +5,11 @@ import 'package:a/Vistas/Foros.dart';
 import 'package:a/Vistas/Myforos.dart';
 
 class BNavegacion extends StatefulWidget {
+<<<<<<< HEAD
   const BNavegacion({super.key});
+=======
+  const BNavegacion({Key? key}) : super(key: key);
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
 
   @override
   State<BNavegacion> createState() => _BNavegacionState();
@@ -34,9 +38,13 @@ class _BNavegacionState extends State<BNavegacion> {
       ),
       bottomNavigationBar: Container(
         height: 60, // Altura para centrar los íconos
+<<<<<<< HEAD
         margin: const EdgeInsets.all(
           20,
         ), // Espacio alrededor para diseño redondeado
+=======
+        margin: const EdgeInsets.all(20), // Espacio alrededor para diseño redondeado
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
         decoration: BoxDecoration(
           color: AppColors.primaryDark,
           borderRadius: BorderRadius.circular(50),
@@ -49,6 +57,7 @@ class _BNavegacionState extends State<BNavegacion> {
             });
             _pageController.jumpToPage(i); // Cambia la página del PageView
           },
+<<<<<<< HEAD
           selectedItemColor:
               AppColors.background, // Color del ítem seleccionado
           unselectedItemColor:
@@ -56,6 +65,13 @@ class _BNavegacionState extends State<BNavegacion> {
           backgroundColor: Colors.transparent, // Fondo transparente
           elevation: 0, // Sin sombra
           items: const [
+=======
+          selectedItemColor: AppColors.background, // Color del ítem seleccionado
+          unselectedItemColor: AppColors.Grey, // Color de los ítems no seleccionados
+          backgroundColor: Colors.transparent, // Fondo transparente
+          elevation: 0, // Sin sombra
+          items: const [     
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
             BottomNavigationBarItem(
               icon: Icon(Icons.home, size: 25),
               label: "Inicio",

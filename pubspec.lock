@@ -320,6 +320,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.3.0"
+<<<<<<< HEAD
   petitparser:
     dependency: transitive
     description:
@@ -328,6 +329,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.1.0"
+=======
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
   platform:
     dependency: transitive
     description:
@@ -445,6 +448,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.0"
+<<<<<<< HEAD
   xml:
     dependency: "direct main"
     description:
@@ -453,6 +457,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.5.0"
+=======
+>>>>>>> 2378459b8acb213ea2ef997815e6390d612842be
 sdks:
   dart: ">=3.7.0 <4.0.0"
   flutter: ">=3.27.0"
